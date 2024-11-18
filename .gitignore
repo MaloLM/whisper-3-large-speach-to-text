@@ -166,3 +166,6 @@ cython_debug/
 */.DS_Store
 *python_dev_env*
 *small_test.mp3
+
+*outputs/*
+!outputs/keep_me.md
