@@ -6,7 +6,7 @@
 
 A simple python program for audio files transcription.
 
-<img src='./docs/diagram.png' width='40%' alt='a diagram showing how system works: all audio files in the ./inputs directory are transcribed to text and then saved into the ./outputs directory.'>
+<img src='./docs/diagram.png' width='60%' alt='a diagram showing how system works: all audio files in the ./inputs directory are transcribed to text and then saved into the ./outputs directory.'>
 
 <br>
 
