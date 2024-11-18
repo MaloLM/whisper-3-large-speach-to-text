@@ -1,6 +1,6 @@
 # whisper-3-large-speach-to-text
 
-[![release-version](https://img.shields.io/badge/Version-1.0.0-blue)]()
+[![release-version](https://img.shields.io/badge/Version-1.0.1-blue)]()
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/MaloLM/whisper-3-large-speach-to-text/blob/main/LICENSE)
 [![language](https://img.shields.io/badge/Language-Python-blue)](https://www.python.org)
 

@@ -27,7 +27,7 @@ def main(input_dir, output_dir, language):
         else:
             raise FileNotFoundError(f"Given path {input_dir} was not found.")
     else:
-        raise FileNotFoundError(f"Given path {output_dir} was not found.")
+        raise NotADirectoryError(f"Given path {output_dir} was not found.")
 
 
 if __name__ == '__main__':
