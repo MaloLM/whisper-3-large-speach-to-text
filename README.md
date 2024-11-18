@@ -4,15 +4,15 @@
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/MaloLM/whisper-3-large-speach-to-text/blob/main/LICENSE)
 [![language](https://img.shields.io/badge/Language-Python-blue)](https://www.python.org)
 
-A simple python program for audio files transcription.
+A simple python program for audio files transcription using Whisper model.
 
 <img src='./docs/diagram.png' width='60%' alt='a diagram showing how system works: all audio files in the ./inputs directory are transcribed to text and then saved into the ./outputs directory.'>
 
 <br>
 
-> ⚠️ [Whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) is a 3.09GB model (FP32, relative to hardware). This version is not > designed for real-time TTS although it is possible to adapt it with faster and less efficient transcription models.
+> ⚠️ [Whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) is a large model (FP32, relative to hardware). > This version is not designed for real-time TTS although it is possible to adapt it with faster and less efficient transcription models.
 
-### Other Whisper models:
+### Whisper models models:
 
 | Size   | Parameters | English-only model | Multilingual model | Required VRAM | Relative speed |
 | ------ | ---------- | ------------------ | ------------------ | ------------- | -------------- |
@@ -23,9 +23,9 @@ A simple python program for audio files transcription.
 | large  | 1550 M     | N/A                | large              | ~10 GB        | 1x             |
 | turbo  | 809 M      | N/A                | turbo              | ~6 GB         | ~8x            |
 
-## Software version requirements for the code to work
+## Software requirements for the code to work
 
-- [ffmpeg](https://ffmpeg.org) v7.1
+- ⚠️ [ffmpeg](https://ffmpeg.org) v7.1
 - Python `3.10.11` in my case, with following requirements:
 
 ```
