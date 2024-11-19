@@ -30,7 +30,7 @@ class SpeechToTextInference:
             self.model_id, torch_dtype=self.torch_dtype, low_cpu_mem_usage=True, use_safetensors=True
         )
         model.to(self.device)
-
+        
         self.processor = AutoProcessor.from_pretrained(self.model_id)
 
         self.pipe = pipeline(

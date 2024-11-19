@@ -1,4 +1,4 @@
-# whisper-3-large-speach-to-text
+# whisper-v3-speach-to-text
 
 [![release-version](https://img.shields.io/badge/Version-1.0.1-blue)]()
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/MaloLM/whisper-3-large-speach-to-text/blob/main/LICENSE)
@@ -12,7 +12,7 @@ A simple python program for audio files transcription using Whisper model.
 
 > ⚠️ [Whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) is a large model (FP32, relative to hardware). > This version is not designed for real-time TTS although it is possible to adapt it with faster and less efficient transcription models.
 
-### Whisper models models:
+### Whisper models:
 
 | Size   | Parameters | English-only model | Multilingual model | Required VRAM | Relative speed |
 | ------ | ---------- | ------------------ | ------------------ | ------------- | -------------- |
@@ -22,6 +22,23 @@ A simple python program for audio files transcription using Whisper model.
 | medium | 769 M      | medium.en          | medium             | ~5 GB         | ~2x            |
 | large  | 1550 M     | N/A                | large              | ~10 GB        | 1x             |
 | turbo  | 809 M      | N/A                | turbo              | ~6 GB         | ~8x            |
+
+#### Switch from v3 to v3-turbo
+
+In the whisper.py file, replace `self.model_id` by `"openai/whisper-large-v3-turbo"`.
+ 
+## How to use
+
+> `python main.py /inputs_directory output_directory language`
+
+> `python main.py input_file output_directory language`
+
+### Compatible languages
+
+```
+english, chinese, german, spanish, russian, korean, french, japanese, portuguese, turkish, polish, catalan, dutch, arabic, swedish, italian, indonesian, hindi, finnish, vietnamese, hebrew, ukrainian, greek, malay, czech, romanian, danish, hungarian, tamil, norwegian, thai, urdu, croatian, bulgarian, lithuanian, latin, maori, malayalam, welsh, slovak, telugu, persian, latvian, bengali, serbian, azerbaijani, slovenian, kannada, estonian, macedonian, breton, basque, icelandic, armenian, nepali, mongolian, bosnian,
+kazakh, albanian, swahili, galician, marathi, punjabi, sinhala, khmer, shona, yoruba, somali, afrikaans, occitan, georgian, belarusian, tajik, sindhi, gujarati, amharic, yiddish, lao, uzbek, faroese, haitian creole, pashto, turkmen, nynorsk, maltese, sanskrit, luxembourgish, myanmar, tibetan, tagalog, malagasy, assamese, tatar, hawaiian, lingala, hausa, bashkir, javanese, sundanese, cantonese, burmese, valencian, flemish, haitian, letzeburgesch, pushto, panjabi, moldavian, moldovan, sinhalese, castilian, mandarin
+```
 
 ## Software requirements for the code to work
 
