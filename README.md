@@ -25,8 +25,8 @@ A simple python program for audio files transcription using Whisper model.
 
 #### Switch from v3 to v3-turbo
 
-In the whisper.py file, replace `self.model_id` by `"openai/whisper-large-v3-turbo"`.
- 
+In the whisper.py file, replace atribute `self.model_id` with the value `"openai/whisper-large-v3-turbo"`.
+
 ## How to use
 
 > `python main.py /inputs_directory output_directory language`
