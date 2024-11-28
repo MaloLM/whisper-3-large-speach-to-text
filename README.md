@@ -10,7 +10,9 @@ A simple python program for audio files transcription using Whisper model.
 
 <br>
 
-> ⚠️ [Whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) is a large model (FP32, relative to hardware). > This version is not designed for real-time TTS although it is possible to adapt it with faster and less efficient transcription models.
+> ⚠️ [Whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) is a large model (FP32, relative to hardware). > This version is not designed for real-time TTS although. It is still possible to adapt it with faster and less efficient transcription models.
+
+> For example In the whisper.py file, replace atribute `self.model_id` with the value `"openai/whisper-large-v3-turbo"`.
 
 ### Whisper models:
 
@@ -22,10 +24,6 @@ A simple python program for audio files transcription using Whisper model.
 | medium | 769 M      | medium.en          | medium             | ~5 GB         | ~2x            |
 | large  | 1550 M     | N/A                | large              | ~10 GB        | 1x             |
 | turbo  | 809 M      | N/A                | turbo              | ~6 GB         | ~8x            |
-
-#### Switch from v3 to v3-turbo
-
-In the whisper.py file, replace atribute `self.model_id` with the value `"openai/whisper-large-v3-turbo"`.
 
 ## How to use
 
